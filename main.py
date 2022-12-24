@@ -16,9 +16,9 @@ code_chars = list(code)
 for i, c in enumerate(code_chars):
     x = 10 + i * 30 + random.randint(-5, 5)
     y = 10 + random.randint(-5, 5)
-    draw.text((x, y), c, font=font, fill=(0, 0, 0))
+    draw.text((x, y), c, font=font, fill=(random.randint(50, 175),random.randint(50, 175),random.randint(50, 175)))
 
-line_count = random.randint(15, 25)
+line_count = random.randint(10, 15)
 for i in range(line_count):
     x1 = random.randint(0, width)
     y1 = random.randint(0, height)
